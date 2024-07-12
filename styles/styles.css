@@ -11,7 +11,7 @@ body{
 .container{
     padding: 20px;
     overflow: hidden;
-    background-color: #047180;
+    background-color: #4d98af;
 }
 
 
@@ -89,32 +89,32 @@ img{
 }
 
 #option1{
-    background-color: #fe4a49;
+    background-color: #c97878;
     transition: 1s;
 }
 
 #option1:hover {
-    color: #fe4a49;
+    color: #c97878;
     background-color: white;
 }
 
 #option2{
-    background-color: #2ab7ca;
+    background-color: #79cad5;
     transition: 1s;
 }
 
 #option2:hover{
-    color: #2ab7ca;
+    color: #79cad5;
     background-color: white;
 }
 
 #option3{
-    background-color: #fed766;
+    background-color: #ecd48b;
     transition: 1s;
 }
 
 #option3:hover{
-    color: #fed766;
+    color: #ecd48b;
     background-color: white;
 }
 
