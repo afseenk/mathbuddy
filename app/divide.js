@@ -16,6 +16,9 @@ function generateEquation() {
     let num1 = Math.floor(Math.random() * 13);
     let num2 = Math.floor(Math.random() * 13);
 
+    // let dummyAnswer1 = Math.floor(Math.random() * 13);
+    // let dummyAnswer2 = Math.floor(Math.random() * 13);
+    //Refactoring the code so that the options do not display the same answer
     do {
         dummyAnswer1 = Math.floor(Math.random() * 26);
     }
@@ -69,16 +72,17 @@ function startGame() {
         if (timeLeft === 0) {
             clearInterval(timer);
 
+            // Scroll to the top
             window.scrollTo(0, 0);
 
           let finalScore = score;
             alert("Time's up! Your final score is " + finalScore);
 
+            // Reload the page
             location.reload();
         }
     }, 1000);
 }
-
 
 function updateTime() {
     timeLeft--;
@@ -91,20 +95,25 @@ function updateTime() {
     }
 }
 
+
+
+
 option1.addEventListener("click", function () {
     if (option1.innerHTML == answer) {
+        score++;
         generateEquation();
-        updateScore();
+        updateScore();       
     } else {
-        audio.play();
+        audio.play();       
     }
 });
 
 
 option2.addEventListener("click", function () {
     if (option2.innerHTML == answer) {
+        score++;
         generateEquation();
-        updateScore();
+        updateScore();   
     } else {
         audio.play();
     }
@@ -112,12 +121,16 @@ option2.addEventListener("click", function () {
 
 option3.addEventListener("click", function () {
     if (option3.innerHTML == answer) {
+        score++;
         generateEquation();
-        updateScore();
+        updateScore();       
     } else {
         audio.play();
+      
     }
 });
+
+
 
 function updateTime() {
     timeLeft--;
@@ -129,6 +142,10 @@ function updateTime() {
         location.reload();
     }
 }
+
+
+
+
 
 generateEquation();
 startGame();

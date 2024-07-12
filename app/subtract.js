@@ -96,21 +96,25 @@ function updateTime() {
     }
 }
 
- 
+
+
+
 option1.addEventListener("click", function () {
     if (option1.innerHTML == answer) {
+        score++;
         generateEquation();
-        updateScore();  
+        updateScore();       
     } else {
-        audio.play();
+        audio.play();       
     }
 });
 
 
 option2.addEventListener("click", function () {
     if (option2.innerHTML == answer) {
+        score++;
         generateEquation();
-        updateScore();  
+        updateScore();   
     } else {
         audio.play();
     }
@@ -118,12 +122,30 @@ option2.addEventListener("click", function () {
 
 option3.addEventListener("click", function () {
     if (option3.innerHTML == answer) {
+        score++;
         generateEquation();
-        updateScore();  
+        updateScore();       
     } else {
         audio.play();
+      
     }
 });
+
+
+
+function updateTime() {
+    timeLeft--;
+    document.getElementById("timer").innerHTML = timeLeft;
+
+    if (timeLeft === 0) {
+        clearInterval(timerId);
+        alert("Time's up! Your final score is " + score + ".");
+        location.reload();
+    }
+}
+
+
+
 
 
 generateEquation();
