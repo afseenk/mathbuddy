@@ -11,7 +11,7 @@ body{
 .container{
     padding: 20px;
     overflow: hidden;
-    background-color: #4d98af;
+    background-color: #047180;
 }
 
 
@@ -60,7 +60,7 @@ img{
 
 .equation{
     font-size: 67px;
-    background-color: rgb(245, 244, 244);
+    background-color: rgb(240, 240, 240);
     border-radius: 5px;
     text-align: center;
     padding-top: 15%;
@@ -89,32 +89,32 @@ img{
 }
 
 #option1{
-    background-color: #c97878;
+    background-color: #fe4a49;
     transition: 1s;
 }
 
 #option1:hover {
-    color: #c97878;
+    color: #fe4a49;
     background-color: white;
 }
 
 #option2{
-    background-color: #79cad5;
+    background-color: #2ab7ca;
     transition: 1s;
 }
 
 #option2:hover{
-    color: #79cad5;
+    color: #2ab7ca;
     background-color: white;
 }
 
 #option3{
-    background-color: #ecd48b;
+    background-color: #fed766;
     transition: 1s;
 }
 
 #option3:hover{
-    color: #ecd48b;
+    color: #fed766;
     background-color: white;
 }
 
